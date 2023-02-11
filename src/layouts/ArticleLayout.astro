@@ -2,17 +2,19 @@
 import Header from "../components/Header.astro";
 
 const { frontmatter } = Astro.props;
-import "../styles/base.css";
 import Layout from "./Layout.astro";
+import "../styles/articles.css";
 ---
 
 <Layout title={frontmatter.title}>
 	<Header />
 	<div class="w-full h-24 flex justify-center items-center">
-		<h2 class="font-crimson text-4xl">{frontmatter.title}</h2>
+		<h2 class="font-crimson text-2xl md:text-4xl">{frontmatter.title}</h2>
 	</div>
 	<section class="w-full flex justify-center items-center">
-		<div class="w-[60vw] flex justify-center items-center flex-col">
+		<div
+			class="w-[80vw] md:w-[60vw] flex justify-center items-center flex-col"
+		>
 			<slot />
 		</div>
 	</section>
