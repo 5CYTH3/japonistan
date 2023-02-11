@@ -10,7 +10,7 @@ const articles = await Astro.glob("./articles/*.md");
 	<Header />
 	<section class="w-full">
 		<div class="h-24 flex justify-center items-center">
-			<h1 class="font-shippori text-4xl">
+			<h1 class="font-shippori md:text-2xl lg:text-4xl">
 				Welcome to the 大日本帝国 website.
 			</h1>
 		</div>
@@ -25,7 +25,7 @@ const articles = await Astro.glob("./articles/*.md");
 				Official Informations
 			</h1>
 		</div>
-		<div id="cardholder" class="">
+		<div id="cardholder" class="w-[60vw]">
 			{
 				articles.map((articlesPosts) => (
 					<Card

@@ -8,8 +8,8 @@ export interface Props {
 const { href, title, body } = Astro.props;
 ---
 
-<article class="p-8 border border-black mb-2">
-	<a href={href}>
+<article class="p-8 border border-black mb-2 flex justify-start items-center">
+	<a href={href} class="">
 		<h2 class="font-shippori">
 			{title}
 			<span>&rarr;</span>
