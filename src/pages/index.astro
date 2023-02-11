@@ -1,81 +1,40 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+
+const articles = await Astro.glob("./articles/*.md");
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
+<Layout title="Dainippon Teikoku">
+	<Header />
+	<section class="w-full">
+		<div class="h-24 flex justify-center items-center">
+			<h1 class="font-shippori text-4xl">
+				Welcome to the 大日本帝国 website.
+			</h1>
+		</div>
+	</section>
+	<section
+		class="w-full h-64 bg-center bg-cover bg-[url('https://i.pinimg.com/originals/59/83/e8/5983e82601b5032ab14e65a16401a426.jpg')]"
+	>
+	</section>
+	<section class="w-full flex justify-center items-center flex-col">
+		<div class="h-24 flex justify-center items-center">
+			<h1 class="font-shippori text-3xl underline">
+				Official Informations
+			</h1>
+		</div>
+		<div id="cardholder" class="">
+			{
+				articles.map((articlesPosts) => (
+					<Card
+						href={articlesPosts.url}
+						title={articlesPosts.frontmatter.title}
+						body={articlesPosts.frontmatter.body}
+					/>
+				))
+			}
+		</div>
+	</section>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
