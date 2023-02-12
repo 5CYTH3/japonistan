@@ -1,13 +1,11 @@
 ---
 import Card from "../components/Card.astro";
-import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 
 const articles = await Astro.glob("./articles/*.md");
 ---
 
 <Layout title="Dainippon Teikoku">
-	<Header />
 	<section class="w-full">
 		<div class="h-24 flex justify-center items-center">
 			<h1 class="font-shippori md:text-2xl lg:text-4xl">
