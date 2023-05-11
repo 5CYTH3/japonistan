@@ -22,7 +22,7 @@ Ce changement de régime nécessita une organisation nouvelle, que le nouvel Arc
 
 Pour Julius Novachrono, le reste de sa vie fut bien morne. Il avait donné gloire, richesse et pérennité à sa nation, mais son esprit n'avait jamais quitté le champ de bataille. Sa condition mentale se dégradait de jour en jour, si bien qu'il lui fut conseillé de se retirer dans la résidence Impériale de Kōkyo, afin de se consacrer à ses recherches en philosophie, ce qui causa malheureusement sa perte. En poussant toujours plus loin sa réflexion, Julius Novachrono arriva à la conclusion mortelle que l'existence n'avait de sens que quand cette dernière cesse. Dans sa biographie, on peut lire la phrase glaçante "Si vivre est une série de contraintes liées au temps, la véritable liberté se trouve-t-elle dans la mort, intemporelle ? C'est la vérité que je cherche."
 
-Julius Novachrono mourra en 1953 à l'âge de 47 ans, suicidé d'une balle dans la tête. Il laissa derrière lui plusieurs manuscrits concernant ses travaux de recherches, ainsi que d'innombrables conseils de stratégie militaire. Sous son oreiller, on retrouva une lettre qu'il adresse au peuple Japonistanais, qu'il conclut par ces mots : 
+Julius Novachrono mourra en 1953 à l'âge de 47 ans, suicidé d'une balle dans la tête. Il laissa derrière lui plusieurs manuscrits concernant ses travaux de recherches, ainsi que d'innombrables conseils de stratégie militaire. Sous son oreiller, on retrouva une lettre qu'il adresse au peuple Japonistanais, qu'il conclut par ces mots :
 
 "Mon oeuvre n'a de but que s'il y a des gens pour la constater. Employez votre existence à amasser des connaissances, faites en sorte que mes travaux perdurent, c'est mon souhait."
 
